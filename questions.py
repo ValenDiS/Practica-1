@@ -24,8 +24,8 @@ answers = [
 # Índice de la respuesta correcta para cada pregunta, el el mismo orden que las preguntas
 correct_answers_index = [1, 2, 0, 3, 1]
 
-# Seleccionamos 3 preguntas
-questions_to_ask = random.choices(list(zip(questions, answers, correct_answers_index)), k=3)
+# Seleccionamos 3 preguntas aleatorias que no se pueden repetir
+questions_to_ask = random.sample(list(zip(questions, answers, correct_answers_index)), k=3)
 
 # Se inicia el conteo de puntos en 0
 puntos = 0
